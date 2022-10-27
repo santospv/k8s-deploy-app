@@ -12,8 +12,11 @@ docker push santospv08/projeto-k8s-database:1.0
 
 echo "Criando serviços no cluster Kubernets"
 
-kubectl apply -f ./services.yaml
+kubectl apply -f ./services-php.yaml
+kubectl apply -f ./services-mysql.yaml
 
 echo "Realizando deployments"
 
-kubectl -f ./deployment.yaml
+kubectl apply -f ./deployment-pvc.yaml
+kubectl apply -f ./deployment-mysql.yaml
+kubectl apply -f ./deployment-php.yaml
