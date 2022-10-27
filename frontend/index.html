@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,600,700" rel="stylesheet" />
+<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+
+</head>
+<body>
+<div id="welcome" class="wrapper-style1">
+	<div class="title">
+	<span class="image image-full"><img src="images/pic01.jfif" alt="" /></span>
+		<h2>Olá, seja bem vindo!</h2>
+		<span class="byline">Isso é apenas uma pagina de teste para realização de um projeto</span> </div>
+		<p>Opa, sou o Paulo Vitor e estou desenvolvendo este projeto para automatizar a criação de um Cluster Kubernets trabalhando em 3 nós na Google Cloud Plataform (GCP).
+		   Por enquanto estou rodando apenas o backend da aplicação no cluster. Além do serviço do Cluster, tambem foram provisionados serviços de LoadBalancer e Mysql.
+		   No Deployment da aplicação está configurado uma replica de 6 Pods que serão espalhados entre os Workers atraves do LoadBalancer tambem configurado.
+		   Está sendo possivel realizar todo o Deploy desse ambiente apenas com um comando.
+		   Ainda não tem integração de Pipeline.</p>
+</div>
+<div id="page" class="container">
+	<div id="content">
+		<div class="title">
+			<h2>Deixe o seu recado \m/</h2>
+
+</div>
+		<div id="form-main">
+        <div id="form-div">
+          <form class="form" form id="contact" method="post">
+            
+            <p class="name">
+              <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Nome" id="name" />
+            </p>
+     
+            <p class="email">
+              <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
+            </p>
+            
+            <p class="text">
+              <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comentário"></textarea>
+            </p>
+            
+            
+            <div class="submit">
+              <button type="button" value="SEND" id="button-blue">Enviar</button>
+              <div class="ease"></div>
+            </div>
+          </form>
+        </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js.js"> </script>
+</body>
+</html>
